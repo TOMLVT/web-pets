@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+          href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+          rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <title>PET</title>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+          <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+          <script src="assets/js/jquery-3.6.0.min.js"></script>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    </head>
+<body>
+<style>
+
+
+.container-modal-cart {
+    max-width: 800px;
+    margin: 12rem auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ 
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#cartItems {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.cart-item img {
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.cart-item h3 {
+    margin: 0;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.remove-btn {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#checkoutForm {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+</style>
+
+
+<!--run modal-->
+<div class="modal" data-modal>
+    <div class="modal-close-overlay" data-modal-overlay></div>
+    <div class="modal-content">
+        <button class="modal-close-btn" data-modal-close>
+            <ion-icon name="close-outline">&times;</ion-icon>
+        </button>
+       
+        <div class="newsletter">
+            <form action="#">
+             <div class="newsletter-img">
+                <img src="assets/img/run1.jpg" alt="subscribe newsletter" width="400" height="400">
+            </div>
+                <button type="submit" class="btn-newsletter">XEM NGAY</button>
+                <p class="modal-titles-sm">Chương trình <span class="hots">HOT</span> đến hết tháng 12 !</p>
+            </form>
+        </div>
+    </div>
+ </div>
+ <!--===========================-->
+ 
+ <!--phần 2-->
+ <header class="header">
+    <!--phần 1-->
+ <div class="body_one">
+    <marquee behavior="scroll" direction="left">
+        <span><i class="fa-solid fa-stopwatch"></i> <i class="fa-solid fa-stopwatch"></i> <i class="fa-solid fa-stopwatch"></i>
+          CHƯƠNG TRÌNH GIẢM GIÁ CHO CÁC PET CHÓ ALATKA</span>
+        <span>MUA NGAY HÔM NAY ĐỂ ĐƯỢC FREESHIP VẬN CHUYỂN</span>
+        <span>CHƯƠNG TRÌNH ĐẾN HẾT THÁNG 5</span>
+    </marquee>
+ </div>
+     <nav class="nav container">
+        <div class="nav__data">
+           <a href="index.html" class="nav__logo">
+              <i class="ri-planet-line"></i> SHOPTOM
+           </a>
+           
+           <div class="nav__toggle" id="nav-toggle">
+             <i class="fa-solid fa-bars"></i>
+           </div>
+        </div>
+ 
+        <div class="nav__menu" id="nav-menu">
+           <ul class="nav__list">
+              <li><a href="index.html" class="nav__link">GIỚI THIỆU</a></li>
+ 
+              <li><a href="giongcho.html" class="nav__link">GIỐNG CHÓ</a></li>
+ 
+           
+              <li class="dropdown__item">
+                 <a href="giongmeo.html" class="nav__link">
+                    GIỐNG MÈO <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                 </a>
+ 
+              </li>
+              <li class="dropdown__item">
+                 <a href="dichvu.html" class="nav__link">
+                    DỊCH VỤ <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                 </a>
+ 
+                 <ul class="dropdown__menu">
+                    <li>
+                       <a href="#" class="dropdown__link">
+                          <i class="ri-user-line"></i> SPA - CẮT TẠO KIỂU
+                       </a>                          
+                    </li>
+ 
+                    <li>
+                       <a href="#" class="dropdown__link">
+                          <i class="ri-lock-line"></i> KHÁCH SẠN - LƯU TRÚ
+                       </a>
+                    </li>
+ 
+                    <li>
+                       <a href="#" class="dropdown__link">
+                          <i class="ri-message-3-line"></i> CHĂM SÓC
+                       </a>
+                    </li>
+                 </ul>
+              </li>
+              <li><a href="#" class="nav__link">TIN TỨC</a></li>
+ 
+              <li><a href="#" class="nav__link">THÔNG TIN</a></li>
+              
+              <li><a href="#" class="nav__link" id="nav__modal-respect">TRỢ GIÚP</a></li>
+              
+           </ul>
+        </div>
+     </nav>
+      <!--modal phản hồi -->
+      <div class="modal-respect" id="modal">
+         <div class="modal-content_respect">
+            <span class="close" id="close">&times;</span>
+            <p class="titles-resspect">NHẬP PHẢN HỒI</p>
+            <input type="text" id="name" class="input-respect" placeholder="Nhập tên của bạn...">
+            <input type="tel" id="phone"  class="input-respect"  placeholder="Nhập số điện thoại của bạn...">
+            <textarea id="feedback" class="note-respect" placeholder="Nhập phản hồi của bạn..."></textarea>
+            <button id="submitFeedback" class="btn-respect">GỬI PHẢN HỒI</button>
+         </div>
+     </div>
+ <!--navbar phụ-->
+ <div class="bodys-navbar">
+    <div class="navbars-part">
+       <i class="fa-solid fa-phone navbar-phones"></i>
+       <p class="navbar_numbers">0123-456-789</p>
+    </div>
+    <div class="navbars-part-two">
+      <input type="search" class="input_body-search" placeholder="Tìm kiếm...." id="searchBtn">
+    </div>
+    <div class="navbars-part-s">
+       <div class="navbar_iconss">
+          <a href="login.html">  <i class="fa-solid fa-user"></i></a>
+         </div>
+ 
+ 
+         <div class="navbar_icons">
+          <a href="#" id="viewCartBtn"><i class="fa-solid fa-cart-shopping"></i></a>
+         <span class="badge-cart-nav" id="cartCount">0</span>
+       </div>
+       
+         
+    </div>
+ 
+ </div>
+  </header>
+ 
+  
+ 
+ 
+ <!--mesege screen small-->
+ <a href="#" class="btn-notes-screen"><i class="fa-solid fa-message" style="font-size: 20px;"></i></a>
+ <a href="#" class="btn-notes-screens"><i class="fa-solid fa-phone" style="font-size: 20px;"></i></a>
+ <!--=================================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-modal-cart">
+    <h2 class="my-carts">Giỏ hàng của bạn</h2>
+    <div id="cartItems"></div>
+    <div id="checkoutForm">
+        <h2 class="info-carts">Thông tin thanh toán</h2>
+        <form id="paymentForm">
+        <label for="name">Áp dụng mã giảm:</label>
+            <input type="text" id="name" name="name" required placeholder="Nhập mã...">
+            <label for="name">Tên:</label>
+            <input type="text" id="name" name="name" required placeholder="Nhập họ và tên...">
+            <label for="name">Số điện thoại:</label>
+            <input type="text" id="name" name="name" required placeholder="Nhập số điện thoại liên hệ...">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Địa chỉ email liên hệ (nếu có)">
+            <label for="address">Địa chỉ:</label>
+            <input type="text" id="address" name="address" required placeholder="Nhập địa chỉ nhận hàng">
+            <label for="name">Tên Tỉnh / thành phố:</label>
+            <input type="text" id="name" name="name" required placeholder="Nhập tên tỉnh / thành phố...">
+            <label for="name">Ghi chú đơn hàng:</label>
+           <textarea name="" id="" class="text-note" rows="5" placeholder="Nhập ghi chú..."></textarea>
+            <p class="titles-cart-sm">Lưu ý : Tất cả các thông tin cung cấp phải chính xác.</p>
+           <button type="submit">Xác nhận thanh toán</button>
+        </form>
+    </div>
+</div>
+
+<!--phần 9-->
+<footer class="footer_body">
+    <div class="footer_body-sm">
+ 
+            <div class="footer_info">
+                    <h4 class="footer_titles">THÔNG TIN LIÊN HỆ</h4>
+ 
+                    <div class="footer_info-all">
+ 
+                        <div class="info_check">
+                            <img src="assets/img/footer1.svg" alt="" class="img_mes">
+                            <p class="info_numbers">0123-456-789</p>
+                        </div>
+ 
+                        <div class="info_check">
+                            <img src="assets/img/footer2.svg" alt="" class="img_mes">
+                            <img src="assets/img/footerzalo.svg" alt="" class="img_appss">
+                            <p class="info_apps">Zalo</p>
+                        </div>
+ 
+                        <div class="info_check">
+                            <img src="assets/img/footer2.svg" alt="" class="img_mes">
+                            <img src="assets/img/footermes.png" alt="" class="img_appss">
+                                <p class="info_apps">Messenger</p>
+                        </div>
+ 
+                        <div class="info_check">
+                            <img src="assets/img/footer3.svg" alt="" class="img_mes">
+                            <p class="info_apps">shoptom@gmail.com</p>
+                        </div>
+ 
+                        
+                        <div class="info_check">
+                            <img src="assets/img/footer4.svg" alt="" class="img_mess">
+                            <p class="info_apps">DNC,Cần Thơ, Việt Nam</p>
+                        </div>
+ 
+ 
+                    </div>
+            </div>
+ 
+            <div class="footer_info">
+                <h4 class="footer_titles">SOCIAL</h4>
+                <div class="info_checks">
+                    <img src="assets/img/s1.svg" alt="" class="img_social-s">
+                    <p class="info_apps">Facebook</p>
+                </div>
+ 
+                <div class="info_checks">
+                   <img src="assets/img/s2.svg"alt="" class="img_social-s">
+                    <p class="info_apps">Tiktok</p>
+                </div>
+ 
+                <div class="info_checks">
+                   <img src="assets/img/s3.svg" alt="" class="img_social-s">
+                    <p class="info_apps">Instagram</p>
+                </div>
+                <div class="info_checks">
+                   <img src="assets/img/s4.svg" alt="" class="img_social-s">
+                    <p class="info_apps">Youtube</p>
+                </div>
+                <div class="info_checks">
+                   <img src="assets/img/s5.webp" alt="" class="img_social-s">
+                    <p class="info_apps">Pinterest</p>
+                </div>
+        </div>  
+ 
+        <div class="footer_info">
+            <h4 class="footer_titles">VỀ SHOPTOM</h4>
+            <div class="footer_info-all">
+                <p class="info_titles">Giới thiệu</p>
+                <p class="info_titles">Dành cho nhà thầu</p>
+                <p class="info_titles">Dành cho khách hàng</p>
+                <p class="info_titles">Câu hỏi thường gặp</p>
+                <p class="info_titles">Hướng dẫn thanh toán</p>
+                <p class="info_titles">Chính sách chăm sóc</p>
+            </div>
+    </div>
+ 
+ 
+    <div class="footer_info">
+        <h4 class="footer_titles">ĐIỀU KHOẢN VÀ CHÍNH SÁCH</h4>
+        <div class="footer_info-all">
+            <p class="info_titles">Chính sách giao hàng</p>
+            <p class="info_titles">Chính sách bảo hành</p>
+            <p class="info_titles">Chính sách đổi trả</p>
+            <p class="info_titles">Chính sách bảo mật</p>
+            <p class="info_titles">Chính sách giải quyết khiếu nại</p>
+            <p class="info_titles">Tiêu chuẩn cộng đồng</p>
+        </div>
+ </div>
+ 
+ <div class="footer_info">
+    <h4 class="footer_titles">THEO DÕI TRANG PAGE SHOP</h4>
+ 
+       <p class="titles-shops">SHOPTOM</p>
+ </div>
+ 
+    </div>
+    <hr>
+ </footer>
+ 
+ <div class="body_end">
+ <h4 class="body_end-title">Công ty TNHH</h4>
+ <div class="taxs">
+ <p class="body_end_tax">Thành lập và hoạt động theo Giấy chứng nhận đăng ký doanh nghiệp số: 0315679882 do Sở Kế hoạch và Đầu tư TP Hồ Chí Minh cấp, đăng ký lần đầu ngày 14/05/2019</p>
+ <p class="body_end_tax">Mã số thuế: 0123456789</p>
+ <p class="body_end_tax">TOM - WEBSITE</p>
+ </div>
+ 
+ <img src="assets/img/dangky.svg" alt="" class="img_tax">
+ </div>
+
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    //=====================giỏ hàng
+ // Function to display cart items
+ function displayCartItems() {
+    var cartItemsContainer = $('#cartItems');
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cartItemsContainer.empty(); // Clear previous cart items
+
+    if (cart.length === 0) {
+        cartItemsContainer.html('<p>Giỏ hàng trống.</p>');
+    } else {
+        var totalPrice = 0;
+        $.each(cart, function(index, item) {
+            var itemHTML = '<div class="cart-item">' +
+                '<img src="' + item.img + '" alt="' + item.title + '" class="img-carts">' +
+                '<h3>' + item.title + '</h3>' +
+               
+                '<p class="sum-carts">Tổng : ' + (item.price.low.New).toLocaleString() + ' VND</p>' +
+                '<button class="remove-btn" data-index="' + index + '"><i class="fa-solid fa-trash"></i></button>' +
+                '</div>';
+            cartItemsContainer.append(itemHTML);
+            totalPrice += item.price.low.New;
+        });
+        cartItemsContainer.append('<p class="my-sums">Tổng giá: ' + totalPrice.toLocaleString() + ' VNĐ</p>');
+    }
+}
+
+// Load cart items when the page is loaded
+$(document).ready(function() {
+    displayCartItems();
+});
+
+// Handle click event for removing item from cart
+$(document).on('click', '.remove-btn', function() {
+    var index = $(this).data('index');
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.splice(index, 1); // Remove item from cart array
+    localStorage.setItem('cart', JSON.stringify(cart)); // Save updated cart to localStorage
+    displayCartItems(); // Update cart display
+});
+
+// Handle form submission for payment
+$('#paymentForm').submit(function(event) {
+    event.preventDefault(); // Prevent form submission
+    // Here you can implement the payment process, e.g., sending data to a server
+    alert('Thanh toán thành công!');
+    // After successful payment, you may want to redirect the user to a thank you page or clear the cart
+    // For demonstration purpose, let's clear the cart
+    localStorage.removeItem('cart');
+    displayCartItems(); // Update cart display (now it will be empty)
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Cập nhật số lượng sản phẩm trong giỏ hàng từ localStorage
+    updateCartCount();
+});
+
+// Function to update cart count
+function updateCartCount() {
+    var cart = JSON.parse(localStorage.getItem('cart')) || [];
+    var cartCount = cart.length;
+    $('#cartCount').text(cartCount);
+}
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

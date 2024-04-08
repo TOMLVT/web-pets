@@ -1,0 +1,375 @@
+<!--JSON SERVER
+   khởi động : npm install json-server
+   lấy host : npx json-server --watch tên:file --port 3000
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+          href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+          rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+          <title>PET</title>
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+          <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+          <script src="assets/js/jquery-3.6.0.min.js"></script>
+    </head>
+<body>
+    
+<!--run modal-->
+<div class="modal" data-modal>
+   <div class="modal-close-overlay" data-modal-overlay></div>
+   <div class="modal-content">
+       <button class="modal-close-btn" data-modal-close>
+           <ion-icon name="close-outline">&times;</ion-icon>
+       </button>
+      
+       <div class="newsletter">
+           <form action="#">
+            <div class="newsletter-img">
+               <img src="assets/img/run1.jpg" alt="subscribe newsletter" width="400" height="400">
+           </div>
+               <button type="submit" class="btn-newsletter">XEM NGAY</button>
+               <p class="modal-titles-sm">Chương trình <span class="hots">HOT</span> đến hết tháng 12 !</p>
+           </form>
+       </div>
+   </div>
+</div>
+<!--===========================-->
+
+<!--phần 2-->
+<header class="header">
+   <!--phần 1-->
+<div class="body_one">
+   <marquee behavior="scroll" direction="left">
+       <span><i class="fa-solid fa-stopwatch"></i> <i class="fa-solid fa-stopwatch"></i> <i class="fa-solid fa-stopwatch"></i>
+         CHƯƠNG TRÌNH GIẢM GIÁ CHO CÁC PET CHÓ ALATKA</span>
+       <span>MUA NGAY HÔM NAY ĐỂ ĐƯỢC FREESHIP VẬN CHUYỂN</span>
+       <span>CHƯƠNG TRÌNH ĐẾN HẾT THÁNG 5</span>
+   </marquee>
+</div>
+    <nav class="nav container">
+       <div class="nav__data">
+          <a href="index.html" class="nav__logo">
+             <i class="ri-planet-line"></i> SHOPTOM
+          </a>
+          
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+       </div>
+
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li><a href="index.html" class="nav__link">GIỚI THIỆU</a></li>
+
+             <li><a href="giongcho.html" class="nav__link">GIỐNG CHÓ</a></li>
+
+          
+             <li class="dropdown__item">
+                <a href="giongmeo.html" class="nav__link">
+                   GIỐNG MÈO <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </a>
+
+             </li>
+             <li class="dropdown__item">
+                <a href="dichvu.html" class="nav__link">
+                   DỊCH VỤ <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                </a>
+
+                <ul class="dropdown__menu">
+                   <li>
+                      <a href="#" class="dropdown__link">
+                         <i class="ri-user-line"></i> SPA - CẮT TẠO KIỂU
+                      </a>                          
+                   </li>
+
+                   <li>
+                      <a href="#" class="dropdown__link">
+                         <i class="ri-lock-line"></i> KHÁCH SẠN - LƯU TRÚ
+                      </a>
+                   </li>
+
+                   <li>
+                      <a href="#" class="dropdown__link">
+                         <i class="ri-message-3-line"></i> CHĂM SÓC
+                      </a>
+                   </li>
+                </ul>
+             </li>
+             <li><a href="#" class="nav__link">TIN TỨC</a></li>
+
+             <li><a href="#" class="nav__link">THÔNG TIN</a></li>
+             
+             <li><a href="#" class="nav__link" id="nav__modal-respect">TRỢ GIÚP</a></li>
+             
+          </ul>
+       </div>
+    </nav>
+     <!--modal phản hồi -->
+     <div class="modal-respect" id="modal">
+        <div class="modal-content_respect">
+           <span class="close" id="close">&times;</span>
+           <p class="titles-resspect">NHẬP PHẢN HỒI</p>
+           <input type="text" id="name" class="input-respect" placeholder="Nhập tên của bạn...">
+           <input type="tel" id="phone"  class="input-respect"  placeholder="Nhập số điện thoại của bạn...">
+           <textarea id="feedback" class="note-respect" placeholder="Nhập phản hồi của bạn..."></textarea>
+           <button id="submitFeedback" class="btn-respect">GỬI PHẢN HỒI</button>
+        </div>
+    </div>
+<!--navbar phụ-->
+<div class="bodys-navbar">
+   <div class="navbars-part">
+      <i class="fa-solid fa-phone navbar-phones"></i>
+      <p class="navbar_numbers">0123-456-789</p>
+   </div>
+   <div class="navbars-part-two">
+     <input type="search" class="input_body-search" placeholder="Tìm kiếm....">
+   </div>
+   <div class="navbars-part-s">
+      <div class="navbar_iconss">
+         <a href="login.html">  <i class="fa-solid fa-user"></i></a>
+        </div>
+        <div class="navbar_icons">
+            <a href="#" id="viewCartBtn"><i class="fa-solid fa-cart-shopping"></i></a>
+           <span class="badge-cart-nav" id="cartCount">0</span>
+         </div>
+         
+        
+   </div>
+
+</div>
+ </header>
+
+ 
+
+
+
+<!--mesege screen small-->
+<a href="#" class="btn-notes-screen"><i class="fa-solid fa-message" style="font-size: 20px;"></i></a>
+<a href="#" class="btn-notes-screens"><i class="fa-solid fa-phone" style="font-size: 20px;"></i></a>
+<!--=================================-->
+
+ 
+
+<div class="body-bg-meo" style="margin-top: 10rem;">
+    <img src="assets/img/bg-dichvu.webp" alt="">
+</div>
+
+    <div class="all-product-corgi">
+         <h4 class="titles-body_corgi">Các dịch vụ cho bé Cún</h4>
+         <div class="products-corgi_sm">
+
+
+            <div class="card_corgi">
+                <div class="img_cards-cr">
+                    <img src="assets/img/dichvu1.webp" alt="" class="img_crs">
+                </div>
+                <div class="product-info-cr">
+                    <p class="name_cards">Tắm Cắt tạo kiểu</p>
+                    <p class="names-sm">Dịch vụ tắm, vệ sinh và cắt tạo kiểu theo quy trình spa  10 bước chuẩn cao cấp. Tư vấn cắt tạo kiểu theo yêu cầu</p>
+                  <div class="btn-corgi">
+                    <a href="" class="link-btn-corgi">Xem thêm</a>
+                  </div>
+                </div>
+            </div>
+
+            <div class="card_corgi">
+                <div class="img_cards-cr">
+                    <img src="assets/img/dichvu22.jpg" alt="" class="img_crs">
+                </div>
+                <div class="product-info-cr">
+                    <p class="name_cards">Khách sạn
+                        Lưu trú</p>
+                    <p class="names-sm">Dịch vụ lưu trú và chăm sóc thú cưng theo chế độ dinh dưỡng khoa học, không gian và cơ sở vật chất hiện đại</p>
+                    <div class="btn-corgi">
+                        <a href="" class="link-btn-corgi">Xem thêm</a>
+                      </div>
+                </div>
+            </div>
+
+
+            <div class="card_corgi">
+                <div class="img_cards-cr">
+                    <img src="assets/img/dichvu3.jpg" alt="" class="img_crs">
+                </div>
+                <div class="product-info-cr">
+                    <p class="name_cards">Đưa đón
+                        tận nhà</p>
+                    <p class="names-sm">Dịch vụ đưa đón thú cưng tại nhà theo lịch hẹn. Thú cưng luôn được đảm bảo an toàn trong quãng đường di chuyển</p>
+                    <div class="btn-corgi">
+                        <a href="" class="link-btn-corgi">Xem thêm</a>
+                      </div>
+                </div>
+            </div>
+
+            <div class="card_corgi">
+                <div class="img_cards-cr">
+                    <img src="assets/img/dichvu4.jpg" alt="" class="img_crs">
+                </div>
+                <div class="product-info-cr">
+                    <p class="name_cards">Thức ăn
+                        Phụ kiện</p>
+                    <p class="names-sm">Đa dạng các sản phẩm thức ăn hạt, pate đảm bảo nguồn gốc...và đồ dùng, phụ kiện, thời trang dành cho thú cưng</p>
+                    <div class="btn-corgi">
+                        <a href="" class="link-btn-corgi">Xem thêm</a>
+                      </div>
+                </div>
+            </div>
+
+            
+        
+
+
+         </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--phần 9-->
+<footer class="footer_body">
+    <div class="footer_body-sm">
+ 
+            <div class="footer_info">
+                    <h4 class="footer_titles">THÔNG TIN LIÊN HỆ</h4>
+ 
+                    <div class="footer_info-all">
+ 
+                        <div class="info_check">
+                            <img src="assets/img/footer1.svg" alt="" class="img_mes">
+                            <p class="info_numbers">0123-456-789</p>
+                        </div>
+ 
+                        <div class="info_check">
+                            <img src="assets/img/footer2.svg" alt="" class="img_mes">
+                            <img src="assets/img/footerzalo.svg" alt="" class="img_appss">
+                            <p class="info_apps">Zalo</p>
+                        </div>
+ 
+                        <div class="info_check">
+                            <img src="assets/img/footer2.svg" alt="" class="img_mes">
+                            <img src="assets/img/footermes.png" alt="" class="img_appss">
+                                <p class="info_apps">Messenger</p>
+                        </div>
+ 
+                        <div class="info_check">
+                            <img src="assets/img/footer3.svg" alt="" class="img_mes">
+                            <p class="info_apps">shoptom@gmail.com</p>
+                        </div>
+ 
+                        
+                        <div class="info_check">
+                            <img src="assets/img/footer4.svg" alt="" class="img_mess">
+                            <p class="info_apps">DNC,Cần Thơ, Việt Nam</p>
+                        </div>
+ 
+ 
+                    </div>
+            </div>
+ 
+            <div class="footer_info">
+                <h4 class="footer_titles">SOCIAL</h4>
+                <div class="info_checks">
+                    <img src="assets/img/s1.svg" alt="" class="img_social-s">
+                    <p class="info_apps">Facebook</p>
+                </div>
+ 
+                <div class="info_checks">
+                   <img src="assets/img/s2.svg"alt="" class="img_social-s">
+                    <p class="info_apps">Tiktok</p>
+                </div>
+ 
+                <div class="info_checks">
+                   <img src="assets/img/s3.svg" alt="" class="img_social-s">
+                    <p class="info_apps">Instagram</p>
+                </div>
+                <div class="info_checks">
+                   <img src="assets/img/s4.svg" alt="" class="img_social-s">
+                    <p class="info_apps">Youtube</p>
+                </div>
+                <div class="info_checks">
+                   <img src="assets/img/s5.webp" alt="" class="img_social-s">
+                    <p class="info_apps">Pinterest</p>
+                </div>
+        </div>  
+ 
+        <div class="footer_info">
+            <h4 class="footer_titles">VỀ SHOPTOM</h4>
+            <div class="footer_info-all">
+                <p class="info_titles">Giới thiệu</p>
+                <p class="info_titles">Dành cho nhà thầu</p>
+                <p class="info_titles">Dành cho khách hàng</p>
+                <p class="info_titles">Câu hỏi thường gặp</p>
+                <p class="info_titles">Hướng dẫn thanh toán</p>
+                <p class="info_titles">Chính sách chăm sóc</p>
+            </div>
+    </div>
+ 
+ 
+    <div class="footer_info">
+        <h4 class="footer_titles">ĐIỀU KHOẢN VÀ CHÍNH SÁCH</h4>
+        <div class="footer_info-all">
+            <p class="info_titles">Chính sách giao hàng</p>
+            <p class="info_titles">Chính sách bảo hành</p>
+            <p class="info_titles">Chính sách đổi trả</p>
+            <p class="info_titles">Chính sách bảo mật</p>
+            <p class="info_titles">Chính sách giải quyết khiếu nại</p>
+            <p class="info_titles">Tiêu chuẩn cộng đồng</p>
+        </div>
+ </div>
+ 
+ <div class="footer_info">
+    <h4 class="footer_titles">THEO DÕI TRANG PAGE SHOP</h4>
+ 
+       <p class="titles-shops">SHOPTOM</p>
+ </div>
+ 
+    </div>
+    <hr>
+ </footer>
+ 
+ <div class="body_end">
+ <h4 class="body_end-title">Công ty TNHH</h4>
+ <div class="taxs">
+ <p class="body_end_tax">Thành lập và hoạt động theo Giấy chứng nhận đăng ký doanh nghiệp số: 0315679882 do Sở Kế hoạch và Đầu tư TP Hồ Chí Minh cấp, đăng ký lần đầu ngày 14/05/2019</p>
+ <p class="body_end_tax">Mã số thuế: 0123456789</p>
+ <p class="body_end_tax">TOM - WEBSITE</p>
+ </div>
+ 
+ <img src="assets/img/dangky.svg" alt="" class="img_tax">
+ </div>
+
+
+
+
+
+<script src="assets/js/swiper-bundle.min.js"></script>
+ <script src="assets/js/main.js"></script>
+</body>
+</html>

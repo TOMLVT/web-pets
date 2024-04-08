@@ -1,0 +1,571 @@
+{
+    "databrands": [
+        "Chó Phốc sốc",
+        "Chó Husky",
+        "Chó Golden",
+        "Chó Pug",
+        "Chó Corgi",
+        "Chó Alaska",
+        "Chó Poodle",
+        "Chó bull pháp",
+        "Chó Bichon",
+        "Chó labrador"
+    ],
+
+    "datacat" : [
+         {
+            "id":"a1",
+            "classify":"high",
+            "img":"assets/img/noibat1.jpg",
+            "title":"Mèo con lông xám",
+            "price": {
+                    "low":{
+                         "Old":8400000,
+                         "New":6400000
+                    },
+                    "high":{
+                        "Old":5600000,
+                        "New":8900000
+                    }
+            }
+         }
+    ],
+     "dataProducts": [
+
+        {
+            "id":"a1",
+            "classify":"high",
+            "img":"assets/img/golden2.jpg",
+            "title":"Chó phốc sóc con",
+            "price": {
+                    "low":{
+                         "Old":3400000,
+                         "New":5400000
+                    },
+                    "high":{
+                        "Old":5600000,
+                        "New":8900000
+                    }
+            }
+        },
+         
+        {
+            "id":"a2",
+            "classify":"high",
+            "img":"assets/img/golden2.jpg",
+            "title":"Chó Golden con",
+            "price": {
+                    "low":{
+                         "Old":2400000,
+                         "New":4400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+
+        {
+            "id":"a3",
+            "classify":"low",
+            "img":"assets/img/pug.jpg",
+            "title":"Chó Pug con",
+            "price": {
+                    "low":{
+                         "Old":3400000,
+                         "New":5400000
+                    },
+                    "high":{
+                        "Old":7600000,
+                        "New":9900000
+                    }
+            }
+        },
+
+        
+        {
+            "id":"a4",
+            "classify":"low",
+            "img":"assets/img/husky.jpg",
+            "title":"Chó Husky con",
+            "price": {
+                    "low":{
+                         "Old":2400000,
+                         "New":6400000
+                    },
+                    "high":{
+                        "Old":7600000,
+                        "New":8900000
+                    }
+            }
+        },
+        {
+            "id":"a5",
+            "classify":"high",
+            "img":"assets/img/golden2.jpg",
+            "title":"Chó Golden con ",
+            "price": {
+                    "low":{
+                         "Old":2400000,
+                         "New":4400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a6",
+            "classify":"high",
+            "img":"assets/img/golden-con-1.webp",
+            "title":"Chó Golden con ",
+            "price": {
+                    "low":{
+                         "Old":6400000,
+                         "New":5400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a7",
+            "classify":"high",
+            "img":"assets/img/golden2.jpg",
+            "title":"Chó Golden con ",
+            "price": {
+                    "low":{
+                         "Old":6400000,
+                         "New":5400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a8",
+            "classify":"high",
+            "img":"assets/img/golden2.jpg",
+            "title":"Chó Golden con ",
+            "price": {
+                    "low":{
+                         "Old":8400000,
+                         "New":7400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a9",
+            "classify":"high",
+            "img":"assets/img/golden2.jpg",
+            "title":"Chó Golden con ",
+            "price": {
+                    "low":{
+                         "Old":8400000,
+                         "New":7400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a10",
+            "classify":"high",
+            "img":"assets/img/husky3.jpg",
+            "title":"Chó Husky con ",
+            "price": {
+                    "low":{
+                         "Old":8400000,
+                         "New":7400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a11",
+            "classify":"high",
+            "img":"assets/img/husky4.jpg",
+            "title":"Chó Husky con ",
+            "price": {
+                    "low":{
+                         "Old":5400000,
+                         "New":3400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a12",
+            "classify":"high",
+            "img":"assets/img/husky5.jpg",
+            "title":"Chó Husky con ",
+            "price": {
+                    "low":{
+                         "Old":9400000,
+                         "New":7400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a13",
+            "classify":"high",
+            "img":"assets/img/husky6.jpg",
+            "title":"Chó Husky con ",
+            "price": {
+                    "low":{
+                         "Old":6400000,
+                         "New":5400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a14",
+            "classify":"high",
+            "img":"assets/img/husky11.jpg",
+            "title":"Chó Husky con ",
+            "price": {
+                    "low":{
+                         "Old":11400000,
+                         "New":9400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a15",
+            "classify":"high",
+            "img":"assets/img/chocanh.jpg",
+            "title":"Chó Phốc sốc con ",
+            "price": {
+                    "low":{
+                         "Old":10400000,
+                         "New":9400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+       
+        {
+            "id":"a16",
+            "classify":"high",
+            "img":"assets/img/pug.jpg",
+            "title":"Chó Pug con ",
+            "price": {
+                    "low":{
+                         "Old":12400000,
+                         "New":7400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a17",
+            "classify":"high",
+            "img":"assets/img/pug.jpg",
+            "title":"Chó Pug con ",
+            "price": {
+                    "low":{
+                         "Old":12400000,
+                         "New":7400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a18",
+            "classify":"high",
+            "img":"assets/img/alk1.jpg",
+            "title":"Chó Alaska con ",
+            "price": {
+                    "low":{
+                         "Old":12400000,
+                         "New":7400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a19",
+            "classify":"high",
+            "img":"assets/img/alk2.jpg",
+            "title":"Chó Alaska con ",
+            "price": {
+                    "low":{
+                         "Old":11400000,
+                         "New":8400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a20",
+            "classify":"high",
+            "img":"assets/img/alk3.jpg",
+            "title":"Chó Alaska con ",
+            "price": {
+                    "low":{
+                         "Old":15400000,
+                         "New":9400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a21",
+            "classify":"high",
+            "img":"assets/img/alk4.jpg",
+            "title":"Chó Alaska con ",
+            "price": {
+                    "low":{
+                         "Old":10400000,
+                         "New":5400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a22",
+            "classify":"high",
+            "img":"assets/img/alk5.jpg",
+            "title":"Chó Alaska con ",
+            "price": {
+                    "low":{
+                         "Old":22400000,
+                         "New":10400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a23",
+            "classify":"high",
+            "img":"assets/img/cr1.jpg",
+            "title":"Chó Corgi con ",
+            "price": {
+                    "low":{
+                         "Old":22400000,
+                         "New":10400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a24",
+            "classify":"high",
+            "img":"assets/img/cr2.jpg",
+            "title":"Chó Corgi con ",
+            "price": {
+                    "low":{
+                         "Old":22400000,
+                         "New":10400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a25",
+            "classify":"high",
+            "img":"assets/img/cr3.jpg",
+            "title":"Chó Corgi con ",
+            "price": {
+                    "low":{
+                         "Old":22400000,
+                         "New":10400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a26",
+            "classify":"high",
+            "img":"assets/img/bull.jpg",
+            "title":"Chó Bull con ",
+            "price": {
+                    "low":{
+                         "Old":12400000,
+                         "New":11400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a27",
+            "classify":"high",
+            "img":"assets/img/bull1.jpg",
+            "title":"Chó Bull con ",
+            "price": {
+                    "low":{
+                         "Old":12400000,
+                         "New":11400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a28",
+            "classify":"high",
+            "img":"assets/img/bull2.jpg",
+            "title":"Chó Bull con ",
+            "price": {
+                    "low":{
+                         "Old":12400000,
+                         "New":11400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a29",
+            "classify":"high",
+            "img":"assets/img/bull3.jpg",
+            "title":"Chó Bull con ",
+            "price": {
+                    "low":{
+                         "Old":12400000,
+                         "New":11400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a30",
+            "classify":"high",
+            "img":"assets/img/pb1.jpg",
+            "title":"Chó Poodle con ",
+            "price": {
+                    "low":{
+                         "Old":32400000,
+                         "New":21400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a31",
+            "classify":"high",
+            "img":"assets/img/pd2.jpg",
+            "title":"Chó Poodle con ",
+            "price": {
+                    "low":{
+                         "Old":32400000,
+                         "New":21400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a32",
+            "classify":"high",
+            "img":"assets/img/pd3.jpg",
+            "title":"Chó Poodle con ",
+            "price": {
+                    "low":{
+                         "Old":32400000,
+                         "New":21400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a34",
+            "classify":"high",
+            "img":"assets/img/poodle.jpg",
+            "title":"Chó Poodle con ",
+            "price": {
+                    "low":{
+                         "Old":32400000,
+                         "New":21400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        }
+        
+
+     ]
+}  
