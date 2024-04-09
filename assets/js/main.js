@@ -190,31 +190,82 @@ $(document).on('click', '#viewCartBtn', function() {
         window.location.href = 'giohang.html';
     });
 // Search function
-$('#searchBtn').click(function() {
-    var searchTerm = $('#searchInput').val().toLowerCase();
-    $.getJSON('assets/js/data.json', function(data) {
-        var filteredProducts = data.dataProducts.filter(function(product) {
-            return product.title.toLowerCase().includes(searchTerm);
+
+
+
+
+
+
+
+
+
+
+
+
+
+//========================================================================
+
+
+  
+
+
+
+ // Trong main.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    const addToFavoriteButtons = document.querySelectorAll('.addToFavorite');
+
+    addToFavoriteButtons.forEach(button => {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+            const productId = button.dataset.productId;
+            
+            // Sử dụng fetch để lấy dữ liệu từ tệp JSON
+            fetch('assets/js/data.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    const product = data.dataProducts.find(product => product.id === productId);
+                    if (product) {
+                        addToFavorites(product);
+                    } else {
+                        console.error('Product not found in data.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
         });
-        displayProducts(filteredProducts);
     });
-});
+
+//     function addToFavorites(product) {
+//         // Lấy danh sách sản phẩm yêu thích từ localStorage
+//         const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+//         // Kiểm tra xem sản phẩm đã tồn tại trong danh sách yêu thích chưa
+//         const existingIndex = favorites.findIndex(item => item.id === product.id);
+//         if (existingIndex === -1) {
+//             // Nếu chưa tồn tại, thêm vào danh sách
+//             favorites.push(product);
+//             // Lưu lại danh sách yêu thích vào localStorage
+//             localStorage.setItem('favorites', JSON.stringify(favorites));
+//             alert('Sản phẩm đã được thêm vào danh sách yêu thích.');
+//         } else {
+//             // Nếu đã tồn tại, thông báo cho người dùng
+//             alert('Sản phẩm đã có trong danh sách yêu thích.');
+//         }
+//     }
+ });
+
+
+//====================================================
 
 
 
 
-function showDiscountNotification() {
-    document.getElementById("discount-notification").style.display = "block";
-    // Tự động ẩn thông báo sau 3 giây
-    setTimeout(function() {
-        document.getElementById("discount-notification").style.display = "none";
-    }, 3000);
-}
-
-// Gọi hàm hiển thị thông báo khi trang tải xong
-window.onload = function() {
-    showDiscountNotification();
-};
 
 
 
@@ -222,19 +273,45 @@ window.onload = function() {
 
 
 
-document.addEventListener("keydown", function (event){
-  if (event.ctrlKey){
-     event.preventDefault();
-  }
-  if(event.keyCode == 123){
-     event.preventDefault();
-  }
-});
 
-document.addEventListener('contextmenu', function(event) {
-  event.preventDefault(); // Chặn hành động mặc định khi chuột phải được nhấp
-  alert(' Hệ thống lỗi !');
-});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener("keydown", function (event){
+//   if (event.ctrlKey){
+//      event.preventDefault();
+//   }
+//   if(event.keyCode == 123){
+//      event.preventDefault();
+//   }
+// });
+
+// document.addEventListener('contextmenu', function(event) {
+//   event.preventDefault(); // Chặn hành động mặc định khi chuột phải được nhấp
+//   alert(' Hệ thống lỗi !');
+// });
 
 
 

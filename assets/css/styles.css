@@ -310,6 +310,7 @@ body {
   /*=============== NAV ===============*/
   .nav {
     height: var(--header-height);
+  
   }
   
   .nav__logo, 
@@ -382,6 +383,7 @@ body {
     .nav__list {
       background-color: #fff;
       padding-top: 1rem;
+     
     }
   }
   
@@ -394,6 +396,7 @@ body {
     justify-content: space-between;
     align-items: center;
     transition: background-color .3s;
+  
   }
   
   .nav__link:hover {
@@ -486,11 +489,13 @@ body {
   @media screen and (max-width: 340px) {
     .container {
       margin-inline: 1rem;
+     
     }
   
     .nav__link {
       padding-inline: 1rem;
     }
+   
   }
   
   /* For large devices */
@@ -599,6 +604,7 @@ body {
   padding-inline:1rem;
   border-radius: 5px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ 
 }
 .navbars-part i{
   color: #fff;
@@ -792,7 +798,7 @@ body {
 .banner-subtitle {
  color: #F35F2D;
  font-size: 2rem;
- font-weight: 500;
+ font-weight: 800;
  text-transform: capitalize;
  letter-spacing: 2px;
  margin-bottom: 10px;
@@ -2079,8 +2085,23 @@ right: -1rem;
     background-color: #F35F2D;
     border-radius: 30px;
     transition: .4s;
+    cursor: pointer;
   }
-  
+  .details-list_big {
+    text-align: center;
+    width: 50%;
+    margin-top: 2rem;
+    padding: 1.3rem 1.3rem;
+    background-color: transparent;
+    border-radius: 30px;
+    transition: .4s;
+    cursor: pointer;
+    border: 1px solid #F35F2D;
+  }
+  .details-list_big a {
+    color: #F35F2D;
+    font-weight: 550;
+  }
   .details-btn_big a {
     color: #fff;
     font-weight: 550;
@@ -2238,24 +2259,159 @@ right: -1rem;
 #discount-notification {
   position: fixed;
   top: 86%;
-  right: 20px;
+  right: 3%;
   background-color: #ffd700;
   padding: 10px;
   font-weight: 550;
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
- 
+  text-align: center;
   z-index: 9999;
+ 
+}
+.icons i {
+  animation: shake 0.5s infinite;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: rotate(-30deg); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+#discount-notification i {
+  color:red;
+  font-weight: 800;
+  font-size: 2.1rem;
+}
+.navbars-part-two {
+  position: relative;
+}
+.btn-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width:40px;
+  height:40px;
+  background-color: #F05E42;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/*css thêm yêu thích*/
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.sidebar.show {
+  right: 0;
+}
+
+.head {
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head p {
+  margin: 0;
+}
+
+.head button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+#cartItem {
+  padding: 10px;
+}
+
+.foot {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
+
+.foot h3 {
+  margin: 5px 0;
+}
+
+.foot h2 {
+  margin: 5px 0;
+  color: #333;
+}
+.titles-sum {
+  font-weight: 500;
+}
+
+.favorite-item {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+}
+.favorite-item .favorite-imgs {
+  width: 20%;
+  height: auto;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #F05E42;
+}
+.cartItemList-wrapper {
+  max-height: 470px; /* Định kích thước cố định cho danh sách, ví dụ 300px */
+  overflow-y: auto; /* Kích hoạt thanh cuộn khi nội dung vượt quá kích thước cố định */
+}
+.tt-list {
+  font-size: 11px;
+  font-weight: 550;
+}
+.price-list {
+  color: red;
+}
+.remove-favorite {
+  background-color: black;
+  color: #fff;
+  padding:2px 4px;
+  border-radius: 50%;
+  border: none;
 }
 
 
             /* css phần 10 ========================================================== */
             @media screen and (max-width: 360px) {
+              .rw-one {
+                padding-top: 3rem;
+              }
+              .navbar_iconss {
+                z-index: 9999;
+              }
+              .navbars-part-s{
+                z-index: 9999;
+              }
                 .bodys-navbar {                    
-                    width: 359px;                 
+                    width: 359px;     
+                    z-index: 9999;            
                   }
                   .bodys-navbar .input_body-search {
-                    width:245px;
+                    width:205px;
                     border: 1px solid #F35F2D;
                   }
                 
@@ -2280,6 +2436,9 @@ right: -1rem;
                   .details-btn_big {
                     width: 100%;
                   }
+                  .details-list_big {
+                    width: 100%;
+                  }
                   .details-titles_price {
                     margin-top: 2rem;
                   }
@@ -2298,6 +2457,15 @@ right: -1rem;
           }
          
           @media screen and (max-width: 576px) {
+            .rw-one {
+              padding-top: 3rem;
+            }
+            .navbar_iconss {
+              z-index: 9999;
+            }
+            .navbars-part-s{
+              z-index: 9999;
+            }
             .bodys-navbar   .navbars-part {
                 display: none;
                }
@@ -2313,9 +2481,21 @@ right: -1rem;
               .details-btn_big {
                 width: 100%;
               }
+              .details-list_big {
+                width: 100%;
+              }
           }
 
           @media screen and (max-width: 768px) {
+            .rw-one {
+              padding-top: 3rem;
+            }
+            .navbar_iconss {
+              z-index: 9999;
+            }
+            .navbars-part-s{
+              z-index: 9999;
+            }
             .bodys-navbar   .navbars-part {
                 display: none;
                }

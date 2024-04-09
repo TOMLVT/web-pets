@@ -81,8 +81,8 @@ label {
 }
 
 input[type="text"],
-input[type="email"],
-button[type="submit"] {
+input[type="email"]
+ {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -90,14 +90,22 @@ button[type="submit"] {
     border-radius: 5px;
 }
 
-button[type="submit"] {
+.veryfai-carts {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     background-color: #ff6347;
     color: #fff;
     border: none;
     cursor: pointer;
     margin-top: 1rem;
 }
-
+.veryfai-carts a {
+    font-size: 1.2rem;
+    color: #fff;
+}
 </style>
 
 
@@ -209,14 +217,23 @@ button[type="submit"] {
        <p class="navbar_numbers">0123-456-789</p>
     </div>
     <div class="navbars-part-two">
-      <input type="search" class="input_body-search" placeholder="Tìm kiếm...." id="searchBtn">
+        <form id="searchForm" action="search.html" method="GET">
+            <input type="search" class="input_body-search" placeholder="Tìm kiếm...." id="searchInput" autocomplete="off">
+            <button type="submit" class="btn-search" id="searchBtn"><i class="fa-solid fa-search"></i></button>
+        </form>
     </div>
+    
     <div class="navbars-part-s">
        <div class="navbar_iconss">
           <a href="login.html">  <i class="fa-solid fa-user"></i></a>
          </div>
  
- 
+  
+         <div class="navbar_icons">
+            <a href="" id="hearts-list"> <i class="fa-solid fa-heart"></i></a>
+            <span class="badge-cart-nav" id="cartCount-list">0</span>
+         </div>
+
          <div class="navbar_icons">
           <a href="#" id="viewCartBtn"><i class="fa-solid fa-cart-shopping"></i></a>
          <span class="badge-cart-nav" id="cartCount">0</span>
@@ -273,7 +290,10 @@ button[type="submit"] {
             <label for="name">Ghi chú đơn hàng:</label>
            <textarea name="" id="" class="text-note" rows="5" placeholder="Nhập ghi chú..."></textarea>
             <p class="titles-cart-sm">Lưu ý : Tất cả các thông tin cung cấp phải chính xác.</p>
-           <button type="submit">Xác nhận thanh toán</button>
+           <button class="veryfai-carts">
+            <a href="" >Xác nhận thanh toán</a>
+           </button>
+           
         </form>
     </div>
 </div>
@@ -391,7 +411,23 @@ button[type="submit"] {
  <img src="assets/img/dangky.svg" alt="" class="img_tax">
  </div>
 
-
+<!--danh sách yêu thích-->
+<div class="sidebar">
+    <div class="head">
+        <p>DANH SÁCH YÊU THÍCH</p>
+        <button id="closeSidebar">Đóng</button>
+    </div>
+    <div class="cartItemList-wrapper"> <!-- Container for favorite items with scrollbar -->
+        <div id="cartItemList"></div> <!-- Placeholder for favorite items -->
+    </div>
+    <div class="foot">
+        <h5 class="titles-sum">TỔNG</h5>
+        <h5 id="total">VNĐ</h5>
+    </div>
+ </div>
+  <!---------------------------------->
+ <script src="assets/js/heart-list/heart.js"></script>
+ <script src="assets/js/update-list/update.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="assets/js/main.js"></script>
 <script>

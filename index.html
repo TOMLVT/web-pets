@@ -2,24 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <title>PET</title>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-      <script src="assets/js/jquery-3.6.0.min.js"></script>
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>PET</title>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-
-
+    
 <!--run modal-->
 <div class="modal" data-modal>
    <div class="modal-close-overlay" data-modal-overlay></div>
@@ -65,7 +62,7 @@
 
        <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-             <li><a href="index.html" class="nav__link">GIỚI THIỆU</a></li>
+             <li><a href="index.html" class="nav__link rw-one">GIỚI THIỆU</a></li>
 
              <li><a href="giongcho.html" class="nav__link">GIỐNG CHÓ</a></li>
 
@@ -127,23 +124,33 @@
       <i class="fa-solid fa-phone navbar-phones"></i>
       <p class="navbar_numbers">0123-456-789</p>
    </div>
+
+
    <div class="navbars-part-two">
-     <input type="search" class="input_body-search" placeholder="Tìm kiếm...." id="searchBtn">
-   </div>
+      <form id="searchForm" action="search.html" method="GET">
+          <input type="search" class="input_body-search" placeholder="Tìm kiếm...." id="searchInput" autocomplete="off">
+          <button type="submit" class="btn-search" id="searchBtn"><i class="fa-solid fa-search"></i></button>
+      </form>
+  </div>
+  
+
+
    <div class="navbars-part-s">
+
+
       <div class="navbar_iconss">
-
-        <a href="login.html" id="loggedInUsername"><i class="fa-solid fa-user"></i></a>
-
-        
+         <a href="login.html">  <i class="fa-solid fa-user"></i></a>
         </div>
 
-
         <div class="navbar_icons">
-         <a href="#" id="viewCartBtn"><i class="fa-solid fa-cart-shopping"></i></a>
-        <span class="badge-cart-nav" id="cartCount">0</span>
+         <a href="" id="hearts-list"> <i class="fa-solid fa-heart"></i></a>
+         <span class="badge-cart-nav" id="cartCount-list">0</span>
       </div>
-      
+       
+        <div class="navbar_icons">
+            <a href="#" id="viewCartBtn"><i class="fa-solid fa-cart-shopping"></i></a>
+           <span class="badge-cart-nav" id="cartCount">0</span>
+         </div>
         
    </div>
 
@@ -162,7 +169,7 @@
           <div class="banner-content">
             <p class="banner-subtitle">TOP NỔI BẬT</p>
             <h2 class="banner-title">Giống chó size nhỏ</h2>
-            <a href="#" class="banner-btn">Mua ngay</a>
+            <a href="giongcho.html" class="banner-btn">Mua ngay</a>
           </div>
         </div>
         <div class="slider-item swiper-slide">
@@ -173,7 +180,7 @@
           <div class="banner-content" style="background-color: #d1d2d6;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
              <p class="banner-subtitle">TOP NỔI BẬT</p>
              <h2 class="banner-title">Giống chó size nhỏ</h2>
-             <a href="#" class="banner-btn">Mua ngay</a>
+             <a href="giongcho.html" class="banner-btn">Mua ngay</a>
            </div>
        </div>
  
@@ -185,7 +192,10 @@
 
 </div>
 
-<div id="discount-notification">Giảm giá 10% hôm nay! <i class="fa-solid fa-gift"></i></div>
+<a href="#" id="discount-notification">
+  <span class="icons"><i class="fa-solid fa-gift"></i></span><br>
+   <span style="font-weight: 700;">HOT !!!</span>
+</a>
 
 <!--mesege screen small-->
 <a href="#" class="btn-notes-screen"><i class="fa-solid fa-message" style="font-size: 20px;"></i></a>
@@ -632,18 +642,35 @@
 
 
 
+ <!--danh sách yêu thích-->
+ <div class="sidebar">
+   <div class="head">
+       <p>DANH SÁCH YÊU THÍCH</p>
+       <button id="closeSidebar">Đóng</button>
+   </div>
+   <div class="cartItemList-wrapper"> <!-- Container for favorite items with scrollbar -->
+       <div id="cartItemList"></div> <!-- Placeholder for favorite items -->
+   </div>
+   <div class="foot">
+       <h5 class="titles-sum">TỔNG</h5>
+       <h5 id="total">VNĐ</h5>
+   </div>
+</div>
+
+
+ <!---------------------------------->
 
 
 
 
 
 
-
-
+ <script src="assets/js/heart-list/heart.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script src="assets/js/corgi/corgi.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/cart-shop/cart.js"></script>
+  <script src="assets/js/update-list/update.js"></script>
 </body>
 </html>

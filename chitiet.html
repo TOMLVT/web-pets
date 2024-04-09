@@ -129,14 +129,22 @@
        <p class="navbar_numbers">0123-456-789</p>
     </div>
     <div class="navbars-part-two">
-      <input type="search" class="input_body-search" placeholder="Tìm kiếm...." id="searchBtn">
+        <form id="searchForm" action="search.html" method="GET">
+            <input type="search" class="input_body-search" placeholder="Tìm kiếm...." id="searchInput" autocomplete="off">
+            <button type="submit" class="btn-search" id="searchBtn"><i class="fa-solid fa-search"></i></button>
+        </form>
     </div>
+    
     <div class="navbars-part-s">
        <div class="navbar_iconss">
           <a href="login.html">  <i class="fa-solid fa-user"></i></a>
          </div>
  
- 
+         <div class="navbar_icons">
+           <a href="" id="hearts-list"> <i class="fa-solid fa-heart"></i></a>
+           <span class="badge-cart-nav" id="cartCount-list">0</span>
+        </div>
+
          <div class="navbar_icons">
             <a href="#" id="viewCartBtn"><i class="fa-solid fa-cart-shopping"></i></a>
             <span class="badge-cart-nav" id="cartCount">0</span>
@@ -147,6 +155,24 @@
  </div>
   </header>
 
+  <!--danh sách yêu thích-->
+  <div class="sidebar">
+    <div class="head">
+        <p>DANH SÁCH YÊU THÍCH</p>
+        <button id="closeSidebar">Đóng</button>
+    </div>
+    <div class="cartItemList-wrapper"> <!-- Container for favorite items with scrollbar -->
+        <div id="cartItemList"></div> <!-- Placeholder for favorite items -->
+    </div>
+    <div class="foot">
+        <h5 class="titles-sum">TỔNG</h5>
+        <h5 id="total">VNĐ</h5>
+    </div>
+</div>
+
+
+
+  <!---------------------------------->
 
     <div class="details-info_body" id="productDetail">
         <div class="details-imgs">
@@ -183,12 +209,23 @@
               <div class="details-btn_big">             
                 <a id="addToCartBtn" class="details-link_btn">Thêm vào giỏ hàng</a>
               </div>
-              <p class="details-note-sm">Tên Cún : Chó phốc sóc</p>
+
+              <div class="details-list_big">             
+                <a href="#" class="details-link_list" id="addToFavoriteBtn">Thêm vào yêu thích</a>
+            </div>
+            
+            
+
+              <div id="favoriteMenu" class="favorite-menu">
+    <!-- Danh sách yêu thích sẽ được hiển thị ở đây -->
+</div>
+              <p class="details-note-sm">Giống thú cưng mini</p>
         </div>
     </div>
 
 
-
+   
+    
 
  <div class="details-mota-big">
     
@@ -350,12 +387,12 @@
             $('#productImage').attr('src', product.img);
             $('#oldPrice').text('Giá cũ: ' + product.price.low.Old.toLocaleString() + ' VNĐ');
             $('#newPrice').text('Đang ưu đãi: ' + product.price.low.New.toLocaleString() + ' VNĐ');
-            
+              //==========================================================================
             // Cập nhật số lượng sản phẩm trong giỏ hàng khi trang được tải lần đầu
             var cart = JSON.parse(localStorage.getItem('cart')) || [];
-            $('#cartCount').text(cart.length);
-
-            // Gắn sự kiện click cho nút "Thêm vào giỏ hàng"
+            $('#cartCount').text(cart.length); 
+  //==========================================================================
+            // Gắn sự kiện click cho nút "Thêm vào giỏ hàng" ==========================
             $('#addToCartBtn').click(function() {
                 // Lấy giỏ hàng từ localStorage
                 var cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -373,6 +410,27 @@
                 // Cập nhật số lượng sản phẩm trong giỏ hàng
                 $('#cartCount').text(cart.length);
             });
+
+            //==========================================================================
+            var favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+$('#cartCount-list').text(favorites.length); // Cập nhật số lượng sản phẩm trong danh sách yêu thích
+
+$('#addToFavoriteBtn').click(function() {
+    
+    favorites.push(product); // Thêm sản phẩm vào danh sách yêu thích
+    localStorage.setItem('favorites', JSON.stringify(favorites)); // Lưu lại danh sách yêu thích vào localStorage
+
+    // Hiển thị thông báo cho người dùng
+    Swal.fire({
+        title: "THÊM THÀNH CÔNG!",
+        text: "Sản phẩm đã được thêm vào danh sách yêu thích của bạn.",
+        icon: "success"
+    });
+
+    // Cập nhật số lượng đã thêm vào danh sách yêu thích 
+    $('#cartCount-list').text(favorites.length);
+});
+            //==================================
         }
     });
 
@@ -385,6 +443,10 @@
 
 
 
+
+
 </script>
+<script src="assets/js/heart-list/heart.js"></script>
+<script src="assets/js/update-list/update.js"></script>
 </body>
 </html>

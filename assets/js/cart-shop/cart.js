@@ -12,3 +12,8 @@ function updateCartCount() {
 $(document).on('click', '#viewCartBtn', function() {
         window.location.href = 'giohang.html';
     });
+
+
+  
+
+   
