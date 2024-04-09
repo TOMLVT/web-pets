@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thông báo giảm giá</title>
+<style>
+
+    #discount-notification {
+        position: fixed;
+        top: 80%;
+        right: 20px;
+        background-color: #ffd700;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        display: none; /* Mặc định ẩn */
+        z-index: 999;
+    }
+</style>
+</head>
+<body>
+<div id="discount-notification">Giảm giá 50%! <i class="fa-solid fa-gift"></i></div>
+<script>
+    // Hiển thị thông báo giảm giá
+    function showDiscountNotification() {
+        document.getElementById("discount-notification").style.display = "block";
+        // Tự động ẩn thông báo sau 3 giây
+        setTimeout(function() {
+            document.getElementById("discount-notification").style.display = "none";
+        }, 9000);
+    }
+    
+    // Gọi hàm hiển thị thông báo khi trang tải xong
+    window.onload = function() {
+        showDiscountNotification();
+    };
+</script>
+</body>
+</html>

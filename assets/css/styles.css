@@ -2234,6 +2234,21 @@ right: -1rem;
   color: red;
   font-weight: 600;
 }
+
+#discount-notification {
+  position: fixed;
+  top: 86%;
+  right: 20px;
+  background-color: #ffd700;
+  padding: 10px;
+  font-weight: 550;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+ 
+  z-index: 9999;
+}
+
+
             /* css phần 10 ========================================================== */
             @media screen and (max-width: 360px) {
                 .bodys-navbar {                    
@@ -2281,7 +2296,7 @@ right: -1rem;
                     margin-left: 24px;
                   }
           }
-
+         
           @media screen and (max-width: 576px) {
             .bodys-navbar   .navbars-part {
                 display: none;

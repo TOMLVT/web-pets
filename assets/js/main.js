@@ -203,7 +203,18 @@ $('#searchBtn').click(function() {
 
 
 
+function showDiscountNotification() {
+    document.getElementById("discount-notification").style.display = "block";
+    // Tự động ẩn thông báo sau 3 giây
+    setTimeout(function() {
+        document.getElementById("discount-notification").style.display = "none";
+    }, 3000);
+}
 
+// Gọi hàm hiển thị thông báo khi trang tải xong
+window.onload = function() {
+    showDiscountNotification();
+};
 
 
 
