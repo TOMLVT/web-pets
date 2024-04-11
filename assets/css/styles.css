@@ -626,7 +626,7 @@ body {
   right: -50%;
   background-color: red;
   border-radius: 50%;
-  padding: 1px 4px;
+  padding: 1px 7px;
   color: #fff;
 }
 /*messege small screen*/
@@ -2004,6 +2004,13 @@ right: -1rem;
     gap: .54rem;
     flex-wrap: wrap;
   }
+
+  .find_products {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+    gap: .54rem;
+    flex-wrap: wrap;
+  }
   .all_card-products .body-sever-products {
     margin-bottom: 1rem;
   }
@@ -2394,7 +2401,254 @@ right: -1rem;
   border: none;
 }
 
+.result-find {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
 
+
+/*css trang thông tin*/
+.body-all_infoshop {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+.body-ele_part {
+  width: 100%;
+  height: auto;
+}
+.body-ele_part img{
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border-radius: 10px;
+  transition: .4s;
+}
+.body-ele_part img:hover {
+  transform: translateY(-20px);
+}
+.body-titles_shops {
+  color: #F35F2D;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.body-titles-smif {
+  margin-top: 1rem;
+  color: gray;
+  font-weight: 620;
+  letter-spacing: 1px;
+}
+.body-title_descript {
+  margin-top: 1rem;
+  color: rgb(135, 135, 135);
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.body-ends-titles {
+  margin-top: 1rem;
+  color: gray;
+  font-weight: 620;
+  letter-spacing: 1px;
+}
+
+.body_titles-bigs {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  margin-top: 2rem;
+}
+
+.body-sm_infos {
+  margin-top: 2rem;
+  
+}
+
+.body-ele_part .body_sm-look {
+ margin-bottom: 1rem;
+ color: #F35F2D;
+ font-weight: 600;
+ letter-spacing: 1px;
+}
+.body-look_sm {
+  margin-bottom: .76rem;
+  color: rgb(135, 135, 135);
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+
+/*css trang tin tức*/
+.body_all-newpaper {
+  margin-top: 13rem;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  padding: 0 1.5rem;
+  gap: 2rem;
+
+}
+.body_e-news {
+  width: 100%;
+  height: auto;
+
+}
+.body_img-new {
+  margin-top: 1rem;
+}
+.body_e-news .body_img-new img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: .4s;
+  margin-bottom: 1rem;
+}
+.body_e-news .body_img-new img:hover {
+  transform: scale(1.02);
+}
+.title-sm-new {
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
+  color: gray;
+  letter-spacing: 1px;
+}
+.body_part-news .newpage-img {
+  width: 100%;
+  height: auto;
+}
+.title-link-new {
+  color: #0055aa;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: .3s;
+}
+.title-link-new:hover {
+  color: #F35F2D;
+}
+.title-new_continue {
+  color: #333;
+  font-weight: 400;
+}
+.title-news {
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: 600;
+}
+.titles-newpages {
+ 
+  color: #333;
+  font-size: 1rem;
+  transition: .3s;
+}
+.titles-newpages:hover {
+  color: #F35F2D;
+}
+.body_part-news .newpage-img img {
+  width: 220px;
+  height: 105px;
+  border-radius: 10px;
+}
+.body_part-news {
+  margin-top: 4rem;
+  padding: .50rem .65rem;
+  background-color: #F6F9FC;
+  border-radius: 6px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.body_newpage-sm {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: .4s;
+}
+.body_newpage-sm:hover {
+  transform: scale(1.04);
+}
+
+.body-part_support {
+  margin-top: 2rem;
+  border: 1px solid #dddddd;
+}
+.body-sp-sm {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.76rem 1.4rem;
+  border-bottom: 1px solid #dddddd;
+  overflow: hidden;
+}
+.body-sp-sm i {
+  color: #F05E42;
+}
+.body-sp-sm a {
+  color: #333;
+}
+
+.body-info_cats {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+.title-info_cats {
+  color: #333;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.all-btn_cat {
+  padding: .76rem;
+  text-align: center;
+  border: 1px solid #333;
+  border-radius: 24px;
+  background: transparent;
+}
+.all-btn_cat a {
+  color: #333;
+}
+.body-info_btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.all-new_cat {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.body-part_cat {
+  width: 375px;
+  height: auto;
+  margin-bottom: .87rem;
+}
+.body-part_cat .body_img-cat img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+}
+.title-p-cats {
+  color: #0055aa;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.titles-sm-cats {
+  margin-top: 1rem;
+  color: gray;
+  font-size: .87rem;
+}
+
+.body-img_note {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+.body-img_note  img {
+  width: 100%;
+  height: auto;
+}
             /* css phần 10 ========================================================== */
             @media screen and (max-width: 360px) {
               .rw-one {
@@ -2454,6 +2708,29 @@ right: -1rem;
                   .img-carts {
                     margin-left: 24px;
                   }
+
+               .body_fours  .body_title-big {
+                  font-size: 1.3rem;
+                 }
+                 .body_titles-bigs {
+                  font-size: 1.3rem;
+                 }
+                 .title-link-new {
+                  font-size: 20px;
+                 }
+.body_newpage-sm {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.newpage-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title-info_cats {
+  font-size: 16px;
+}
+
           }
          
           @media screen and (max-width: 576px) {
@@ -2477,13 +2754,46 @@ right: -1rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
               }
+            
+
               .details-btn_big {
                 width: 100%;
               }
               .details-list_big {
                 width: 100%;
               }
+              .products-corgi_sm {
+                padding: 0 1.5rem;
+              }
+               .products-corgi_sm .card_corgi {
+                width: 100%;
+                height: auto;
+               }
+               .products-corgi_sm .card_corgi .img_crs {
+                border-radius: 50%;
+                width: 200px;
+                height: auto;
+                
+               }
+               .img_cards-cr {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               margin-top: 5px;
+               }
+               .titles-body_corgi {
+                font-size: 1.3rem;
+               }
+          .body-info_cats  .all-new_cat {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+          }
+          .title-p-cats {
+            font-size: 2rem;
+          }
           }
 
           @media screen and (max-width: 768px) {
@@ -2529,6 +2839,21 @@ right: -1rem;
                   .product-goldens {
                     display: grid;
                     grid-template-columns: 1fr;
+                  }
+                  .body_all-newpaper {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                  }
+                  
+                  .body_e-news   .body_newpage-sm {
+                    padding: .87rem 2rem;
+                    border-bottom: 1px solid #dddddd;
+                  }
+                  .title-p-cats {
+                    font-size: .88rem;
+                  }
+                  .titles-sm-cats {
+                    font-size: 12px;
                   }
           }
 
@@ -2578,6 +2903,17 @@ right: -1rem;
                 display: grid;
                 grid-template-columns: 1fr;
               }
+              .body-all_infoshop {
+                display: grid;
+                grid-template-columns: 1fr;
+              }
+           .body_e-news .newpage-img img {
+                width: 150px;
+              }
+              .titles-newpages {
+                font-size: 14px;
+              }
+          
           }
 
           @media screen and (max-width: 1200px) {
@@ -2620,6 +2956,10 @@ right: -1rem;
                 .alls-body-products {
                     display: grid;
                     grid-template-columns: 1fr;
+                  }
+                  .all-new_cat {
+                    display: flex;
+                    justify-content: center;
                   }
           }
 

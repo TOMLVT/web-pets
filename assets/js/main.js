@@ -201,6 +201,7 @@ $(document).on('click', '#viewCartBtn', function() {
 
 
 
+// Function to display search results
 
 
 //========================================================================
@@ -262,16 +263,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //====================================================
-
-
-
-
-
-
-
-
-
-
 
 
 

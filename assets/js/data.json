@@ -564,8 +564,38 @@
                         "New":7900000
                     }
             }
+        },
+        {
+            "id":"a35",
+            "classify":"high",
+            "img":"assets/img/bull.jpg",
+            "title":"Chó Bull con ",
+            "price": {
+                    "low":{
+                         "Old":12400000,
+                         "New":11400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a36",
+            "classify":"high",
+            "img":"assets/img/bull.jpg",
+            "title":"Chó Bull con ",
+            "price": {
+                    "low":{
+                         "Old":12400000,
+                         "New":11400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
         }
-        
-
      ]
 }  
