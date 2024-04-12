@@ -182,23 +182,28 @@
            </div>
         </div>
         <div class="body_parts">
-            <form action="" class="form_body-logins active" id="registerForm">
+          
+            <form action="" class="form_body-logins active" id="loginForm">
 
                 <div class="form_titles-logins">
-                    <a href="#" id="form-one" class="form_link active">ĐĂNG KÝ TÀI KHOẢN</a>
+                    <a href="#" id="form-one" class="form_link active">ĐĂNG KÝ</a>
                 </div>
             
                 <div class="form_body-sm">
-                    <input type="text" class="input-text-sm" id="registerUsername" placeholder="Tên đăng nhập">
+                    <input type="text" id="loginUsername" class="input-text-sm input-signup-username" placeholder="Tên đăng nhập">
                 </div>
             
                 <div class="form_body-sm">
-                    <input type="password" class="input-text-sm" id="registerPassword" placeholder="Tạo Mật khẩu">
+                    <input type="password" id="loginPassword" class="input-text-sm input-signup-password" placeholder="Tạo Mật khẩu">
+                </div>
+            
+                <div class="form_body-fg">
+                    <span><a href="" class="link_forgot">Quên mật khẩu?</a></span>
                 </div>
             
                 <div class="form_body-btns">
                     <!-- Thêm thuộc tính 'type="submit"' để kích hoạt sự kiện submit -->
-                    <button type="submit" class="link-btns" style="border: none;background-color: transparent;color: #fff;font-size: 1rem;">TẠO TÀI KHOẢN</button>
+                    <button type="submit" class="link-btns link-btns-tt" style="border: none;background-color: transparent;color: #fff;font-size: 1rem;">TẠO TÀI KHOẢN</button>
                 </div>
             
                 <div class="alls-or">
@@ -368,5 +373,6 @@
  <script src="assets/js/login/login.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
+
 </body>
 </html>

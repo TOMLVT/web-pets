@@ -160,7 +160,18 @@
 
  
 
-
+ <a href="#" id="discount-notification" class="salesale" onclick="showNotification()">
+    <span class="icons"><i class="fas fa-gift"></i></span><br>
+    <span style="font-weight: 700;">NHẬN !!!</span>
+  </a>
+  
+ 
+  <div class="notification">
+    <span class="closebtn" onclick="closeNotification()">&times;</span>
+    <p>Tạo tài khoản để là thành viên ! <br>
+       Nhận các ưu đãi hấp dẫn <i class="fas fa-gift"></i>
+    </p>
+  </div>
 <!--mesege screen small-->
 <a href="#" class="btn-notes-screen"><i class="fa-solid fa-message" style="font-size: 20px;"></i></a>
 <a href="#" class="btn-notes-screens"><i class="fa-solid fa-phone" style="font-size: 20px;"></i></a>
@@ -244,10 +255,21 @@
 
     <div class="product_parts-meo">
 
+        
+
+            
+               <div class="all-btn_sort">
+                <button id="sortPriceLowToHigh" class="lowformhigh">Sắp xếp theo giá từ thấp đến cao</button>
+                <button id="sortPriceHighToLow" class="lowformhighs">Sắp xếp theo giá từ cao đến thấp</button>
+               </div>
+           
+        
         <div class="all_card-products">
             <div id="searchKeywordContainer"></div>
             <div id="searchResults" class="product-goldens"></div>
         </div>
+
+       
 
     </div>
 
@@ -393,5 +415,7 @@
   <script src="assets/js/search/search.js"></script>
   <script src="assets/js/heart-list/heart.js"></script>
   <script src="assets/js/update-list/update.js"></script>
+
+  
 </body>
 </html>

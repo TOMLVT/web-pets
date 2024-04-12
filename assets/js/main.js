@@ -303,9 +303,19 @@ document.addEventListener('DOMContentLoaded', function() {
 //   event.preventDefault(); // Chặn hành động mặc định khi chuột phải được nhấp
 //   alert(' Hệ thống lỗi !');
 // });
-
-
-
+//==================================================================================
+// phần thông báo nhỏ khi click
+function closeNotification() {
+    var notification = document.querySelector('.notification');
+    notification.style.top = '-30%'; // Di chuyển thông báo ra khỏi khung nhìn
+    notification.style.opacity = '0'; // Ẩn đi thông báo
+  }
+  
+  function showNotification() {
+    var notification = document.querySelector('.notification');
+    notification.style.top = '0'; // Di chuyển thông báo xuống vị trí mong muốn
+    notification.style.opacity = '1'; // Hiển thị thông báo
+  }
 
 
 

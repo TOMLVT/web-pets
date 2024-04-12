@@ -2040,6 +2040,7 @@ right: -1rem;
   .details-imgs .img-details {
     width: 100%;
     height: auto;
+    border-radius: 10px;
   }
   
   .quantity {
@@ -2402,9 +2403,15 @@ right: -1rem;
 }
 
 .result-find {
+
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
+  background-color: #f58c69;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 
@@ -2649,6 +2656,32 @@ border-radius: 10px;
   width: 100%;
   height: auto;
 }
+.all-btn_sort {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: right;
+  gap: 1rem;
+  padding: 10px 0;
+  border-bottom: 1px solid #dddddd;
+}
+.lowformhigh {
+  background-color: transparent;
+  color: #F35F2D;
+  border: 1px solid #F35F2D;
+  border-radius: 10px;
+  padding: .76rem;
+  cursor: pointer;
+  font-weight: 550;
+}
+.lowformhighs {
+  background-color: transparent;
+  color: #F35F2D;
+  border: 1px solid #F35F2D;
+  border-radius: 10px;
+  padding: .76rem;
+  cursor: pointer;
+  font-weight: 550;
+}
             /* css phần 10 ========================================================== */
             @media screen and (max-width: 360px) {
               .rw-one {
@@ -2797,6 +2830,10 @@ border-radius: 10px;
           }
 
           @media screen and (max-width: 768px) {
+            .all-btn_sort {
+              display: grid;
+              grid-template-columns: 1fr;
+            }
             .rw-one {
               padding-top: 3rem;
             }
@@ -2978,3 +3015,39 @@ border-radius: 10px;
               }
           }
 
+
+/*css khi click sự kiện*/
+  .notification {
+    width: 84%;
+  position: fixed;
+  top: -30%; /* Đặt vị trí ban đầu ngoài khung nhìn của trình duyệt */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1;
+  opacity: 0; /* Mặc định ẩn đi */
+  transition: top 0.5s ease, opacity 0.5s ease; 
+  z-index: 9999;
+}
+
+.notification p {
+  margin: 0;
+}
+
+.closebtn {
+  color: white;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.closebtn:hover {
+  cursor: pointer;
+}
+
+
+     
