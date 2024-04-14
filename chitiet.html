@@ -16,6 +16,7 @@
       <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
       <script src="assets/js/jquery-3.6.0.min.js"></script>
       <link rel="stylesheet" href="assets/css/animation.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -175,7 +176,9 @@
 
   <!---------------------------------->
 
-    <div class="details-info_body" id="productDetail">
+    <div class="details-info_body" id="productDetail" data-aos="fade-right"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine">
         <div class="details-imgs">
             <img src="" alt="Product Image" id="productImage" class="img-details">
         </div>
@@ -228,7 +231,9 @@
    
     
 
- <div class="details-mota-big">
+ <div class="details-mota-big" data-aos="fade-right"
+ data-aos-offset="300"
+ data-aos-easing="ease-in-sine">
     
         <div class="alls-mota">
             <div class="details-motas">Mô Tả</div>
@@ -246,7 +251,9 @@
 
 
 <!--phần 9-->
-<footer class="footer_body">
+<footer class="footer_body" data-aos="fade-right"
+data-aos-offset="300"
+data-aos-easing="ease-in-sine">
     <div class="footer_body-sm">
  
             <div class="footer_info">
@@ -449,5 +456,9 @@ $('#addToFavoriteBtn').click(function() {
 </script>
 <script src="assets/js/heart-list/heart.js"></script>
 <script src="assets/js/update-list/update.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+ </script>
 </body>
 </html>

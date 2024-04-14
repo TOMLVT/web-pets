@@ -9,7 +9,8 @@
         "Chó Poodle",
         "Chó bull pháp",
         "Chó Bichon",
-        "Chó labrador"
+        "Chó labrador",
+        "Mèo con"
     ],
 
     "datacat" : [
@@ -28,7 +29,167 @@
                         "New":8900000
                     }
             }
-         }
+         },
+         {
+            "id":"a2",
+            "classify":"high",
+            "img":"assets/img/meo/meo1.png",
+            "title":" Mèo con Domestic ",
+            "price": {
+                    "low":{
+                         "Old":3400000,
+                         "New":1400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+         {
+            "id":"a3",
+            "classify":"high",
+            "img":"assets/img/meo/bengal.jpg",
+            "title":" Mèo con Bengal ",
+            "price": {
+                    "low":{
+                         "Old":5400000,
+                         "New":4400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a4",
+            "classify":"high",
+            "img":"assets/img/meo/persia.jpg",
+            "title":" Mèo con Persia",
+            "price": {
+                    "low":{
+                         "Old":7400000,
+                         "New":5400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a5",
+            "classify":"high",
+            "img":"assets/img/meo/siamese.jpg",
+            "title":" Mèo con Siamese",
+            "price": {
+                    "low":{
+                         "Old":6400000,
+                         "New":4200000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a6",
+            "classify":"high",
+            "img":"assets/img/meo/Mainecoon.webp",
+            "title":" Mèo con Maine Coon",
+            "price": {
+                    "low":{
+                         "Old":9400000,
+                         "New":8200000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a7",
+            "classify":"high",
+            "img":"assets/img/meo/meo2.jpg",
+            "title":" Mèo con Sphynx",
+            "price": {
+                    "low":{
+                         "Old":12400000,
+                         "New":10200000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a8",
+            "classify":"high",
+            "img":"assets/img/meo/meo3.jpg",
+            "title":" Mèo con Scottish Fold",
+            "price": {
+                    "low":{
+                         "Old":12400000,
+                         "New":10200000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a9",
+            "classify":"high",
+            "img":"assets/img/meo/meo5.jpg",
+            "title":" Mèo con Ragdoll",
+            "price": {
+                    "low":{
+                         "Old":15400000,
+                         "New":14200000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a10",
+            "classify":"high",
+            "img":"assets/img/meo/meo6.jpg",
+            "title":" Mèo con Bombay",
+            "price": {
+                    "low":{
+                         "Old":15400000,
+                         "New":14200000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a11",
+            "classify":"high",
+            "img":"assets/img/meo/meo7.jpg",
+            "title":" Mèo con Munchkin",
+            "price": {
+                    "low":{
+                         "Old":15400000,
+                         "New":12200000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        }
     ],
      "dataProducts": [
 
@@ -590,6 +751,22 @@
                     "low":{
                          "Old":12400000,
                          "New":11400000
+                    },
+                    "high":{
+                        "Old":6600000,
+                        "New":7900000
+                    }
+            }
+        },
+        {
+            "id":"a37",
+            "classify":"high",
+            "img":"assets/img/meo/meo1.png",
+            "title":"Giống mèo con ",
+            "price": {
+                    "low":{
+                         "Old":3400000,
+                         "New":1400000
                     },
                     "high":{
                         "Old":6600000,

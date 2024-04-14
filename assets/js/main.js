@@ -137,7 +137,12 @@ $.getJSON('assets/js/data.json', function(data) {
     // Display products
    
     displayProducts(data.dataProducts);
+    displaycat(data.datacat);
 });
+
+
+
+
 
 // Handle price filter change
 $('#priceFilter').change(function() {
@@ -263,7 +268,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 //====================================================
-
 
 
 

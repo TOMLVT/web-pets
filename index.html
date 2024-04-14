@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="assets/css/animation.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
@@ -204,7 +205,7 @@
  <div class="notification">
    <span class="closebtn" onclick="closeNotification()">&times;</span>
    <p>Tạo tài khoản để là thành viên ! <br>
-      Nhận các ưu đãi hấp dẫn <i class="fas fa-gift"></i>
+      Nhận các ưu đãi hấp dẫn <i class="fas fa-gift"></i> <a href="" style="padding: 3px 7px;background-color: red;color: #fff;margin-left: 10px;font-size: 13px;" >ĐĂNG NHẬP NGAY</a>
    </p>
  </div>
 
@@ -216,12 +217,12 @@
 <!--=================================-->
 
  <!--phần 4-->
- <div class="body_fours">
+ <div class="body_fours" data-aos="fade-up">
     <span class="body_titles-sm">SHOPTOM CÓ GÌ ?</span>
     <p class="body_title-big">Dịch vụ của chúng tôi</p>
  
     <div class="body_all-products">
-       <div class="body-sever">
+       <div class="body-sever" >
  
           <div class="body-sever-sm">
              <div class="body_imgs">
@@ -290,7 +291,7 @@
 
 
 
-   <div class="body_fours">
+   <div class="body_fours" data-aos="fade-up">
     <span class="body_titles-sm">GIỐNG CÚN CON ƯA CHUỘNG NHẤT !!!</span>
     <p class="body_title-big">CÁC BÉ CÚN NỔI BẬT</p>
  
@@ -310,7 +311,7 @@
 
     <div class="five_info">
 
-       <div class="five_sm">
+       <div class="five_sm" data-aos="flip-up">
         <img width="72" height="72" src="https://img.icons8.com/color/48/pet.png" alt="pet"/>
         <div class="five-sm-info">
            <p class="five-number">1500+</p>
@@ -318,7 +319,7 @@
         </div>
        </div>
 
-       <div class="five_sm" style="border: 2px solid #FDBB4B;">
+       <div class="five_sm" style="border: 2px solid #FDBB4B;" data-aos="flip-up">
         <img width="72" height="72" src="https://img.icons8.com/color-glass/48/cost.png" alt="cost"/>
         <div class="five-sm-info">
            <p class="thousand-number">1000+</p>
@@ -326,7 +327,7 @@
         </div>
        </div>
 
-       <div class="five_sm last-five" style="border: 2px solid  #7AC143;">
+       <div class="five_sm last-five" style="border: 2px solid  #7AC143;" data-aos="flip-up">
         <img width="72" height="72" src="https://img.icons8.com/color/48/dog-paw-print.png" alt="dog-paw-print"/>
         <div class="five-sm-info">
            <p class="fifty-number">50+</p>
@@ -342,14 +343,14 @@
 <!--phần 6-->
 
 <div class="body-six">
-    <div class="body-part">
+    <div class="body-part" data-aos="fade-right">
      <img src="assets/img/six.jpg" alt="" class="img_six">
      <div class="body-six-imgsm">
         <img src="assets/img/img-sm.png" alt="" class="img_smalls">
         <p class="titles-small">Mèo con size nhỏ</p>
      </div>
     </div>
-    <div class="body-part">
+    <div class="body-part" data-aos="fade-left">
               <div class="body-part_info">
                  <p class="six-titles-sm">  <i class="fa-solid fa-dog"></i> Đôi lời thấu hiểu</p>
                  <p class="six-titles-big">Chó mèo luôn là những người bạn</p>
@@ -375,7 +376,7 @@
     <p class="titles-seven">  <i class="fa-solid fa-dog"></i> FEEDBACK</p>
      <p class="titles-seven-big">Khách hàng nói gì về SHOPTOM</p>
    <div class="alls-seven">
-    <div class="seven-part">     
+    <div class="seven-part" data-aos="fade-right">     
              <div class="body_avts">
                 <div class="body_avt">
                    <img src="assets/img/avatar.png" alt="" class="img-avatar">
@@ -535,7 +536,7 @@
 
 
 <!--phần 9-->
-<footer class="footer_body">
+<footer class="footer_body" data-aos="fade-up">
     <div class="footer_body-sm">
  
             <div class="footer_info">
@@ -676,7 +677,7 @@
 
 
 
-
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/js/search/search.js"></script>
  <script src="assets/js/heart-list/heart.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -685,5 +686,8 @@
     <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/cart-shop/cart.js"></script>
   <script src="assets/js/update-list/update.js"></script>
+<script>
+   AOS.init();
+</script>
 </body>
 </html>
